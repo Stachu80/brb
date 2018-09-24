@@ -19,8 +19,11 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap-reboot.css",
+        "../node_modules/bootstrap/dist/css/bootstrap-grid.css",
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
-        "styles.sass"
+        "styles.sass",
+        "assets/font/audiowide/audiowide.ttf"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
