@@ -1,8 +1,11 @@
-<div>
-  <div col-sm-12 class="top-container">
-    <img src="../../../assets/img/main_background/1920-pl.png" class="img-fluid" alt="Responsive image" id="image">
-  </div>
+<div class="bg-img">
+  <img src="../../../assets/img/main_background/1920-pl.png" (load)="onLoadImage()" class="img-fluid" alt="Responsive image" id="image" >
 </div>
+
+
+<div col-sm-12 class="top-container" id="container">
+</div>
+
 <header class="animated fadeInDown" id="navbar">
   <app-menu-bar></app-menu-bar>
 </header>
@@ -156,7 +159,5 @@
     </p>
   </div>
 </section>
-
-
 
 
