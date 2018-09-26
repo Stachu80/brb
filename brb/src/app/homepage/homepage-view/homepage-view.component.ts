@@ -1,7 +1,4 @@
-import {
-  AfterContentInit, AfterViewChecked, AfterViewInit, Component, DoCheck, HostListener, Inject, OnInit,
-  Renderer2
-} from '@angular/core';
+import {Component, HostListener, Inject, OnInit, Renderer2} from '@angular/core';
 import {DOCUMENT} from '@angular/common';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 
@@ -47,8 +44,8 @@ export class HomepageViewComponent implements OnInit {
   onWindowScroll(e) {
     const element = document.getElementById('navbar');
     const img = document.getElementById('image');
-
-    if (window.pageYOffset > 500) {
+    const container = document.getElementById('container');
+    if (window.pageYOffset > container.offsetHeight) {
       element.classList.add('sticky');
     } else {
       element.classList.remove('sticky');
