@@ -1,0 +1,25 @@
+$font-stack:    Audiowide;
+$primary-color: #333;
+
+a{
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+nav{
+  background-color: white;
+}
+
+.menu-bar-item{
+  margin-right: 10px;
+}
+#top-line{
+  height: 6px;
+  background-color: #42606f;
+}
+#bottom-line{
+  height: 25px;
+  background-color: #42606f;
+}
+
+
